@@ -1,38 +1,274 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desktop_nav {
+  background-color: #0a4d68;
+  width: 100%;
+  height: 5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
   color: white;
+  border-radius: 0.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.desktop_ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-right: 4rem;
+}
+.desktop_li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.desktop_li:hover {
+  background-color: #9ba4b5;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.763), 0 5px 15px rgba(0, 0, 0, 0.3) inset;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.416) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.desktop_a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn_login_desktop {
+  padding: 1rem 1.6rem 1rem 1.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #9ba4b5;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.763), 0 5px 15px rgba(0, 0, 0, 0.3) inset;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.416) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: scale(1.1);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-top: -4rem;
+  margin-right: 4rem;
+}
+
+.btn_login_desktop:hover {
+  background-color: #00000031;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+.logo_desktop {
+  width: 1.5rem;
+  position: absolute;
+  margin-left: 4rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5);
+
+  background-color: #ffffff14;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+/* MOBILE NAV STARTS HERE */
+
+.mobile_nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #0a4d68;
+  max-width: 35%;
+  height: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 0.2rem;
+  animation: fade-in-out 0.5s ease-in-out;
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
   }
 }
+
+.mobile_ul {
+  box-sizing: border-box;
+}
+.mobile_li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.mobile_a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.mobile_a:hover {
+  text-decoration: underline;
+  background-color: #00000031;
+  border-radius: 0.6rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.733);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_login_mobile {
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  margin-left: -0.4rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #9ba4b547;
+  border-radius: 0.6rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+}
+.btn_login_mobile:hover {
+  background-color: #00000031;
+  border-radius: 0.6rem;
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.196);
+  transition: all 0.3s ease-in-out;
+}
+.mob_MenuOpen {
+  margin-left: -7rem;
+  cursor: pointer;
+  width: 30px;
+}
+
+.mob_MenuOpen {
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out,
+    left 0.8s ease-in-out;
+}
+
+.mob_MenuOpen:hover {
+  transform: scale(1.2);
+}
+
+/* MOBILE NAV ENDS HERE */
+
+/* MEDIA QUERIES STARTS HERE */
+
+@media screen and (min-width: 769px) {
+  .mobile_li {
+    display: none;
+  }
+  .btn_login_mobile {
+    display: none;
+  }
+  .logo_mobile {
+    display: none;
+  }
+  .mob_MenuOpen {
+    display: none;
+  }
+  .mobile_nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop_li {
+    display: none;
+  }
+  .btn_login_desktop {
+    display: none;
+  }
+  .logo_desktop {
+    display: none;
+  }
+  .mob_MenuOpen {
+    margin-left: -35rem;
+    cursor: pointer;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .desktop_li {
+    display: none;
+  }
+  .btn_login_desktop {
+    display: none;
+  }
+  .logo_desktop {
+    display: none;
+  }
+  .mob_MenuOpen {
+    margin-left: -16rem;
+    cursor: pointer;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .desktop_li {
+    display: none;
+  }
+  .btn_login_desktop {
+    display: none;
+  }
+  .logo_desktop {
+    display: none;
+  }
+  .mob_MenuOpen {
+    margin-left: -13rem;
+    cursor: pointer;
+    width: 30px;
+  }
+  .mobile_nav {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 321px) {
+  .desktop_li {
+    display: none;
+  }
+  .btn_login_desktop {
+    display: none;
+  }
+  .logo_desktop {
+    display: none;
+  }
+  .mob_MenuOpen {
+    margin-left: -10rem;
+    cursor: pointer;
+    width: 25px;
+  }
+}
+/* MEDIA QUERIES ENDS HERE */
